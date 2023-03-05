@@ -1,2 +1,2 @@
 # sem4-project
-Also known as Neotelegram
+Also known as Modelling
