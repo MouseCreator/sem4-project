@@ -17,8 +17,15 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
+        Expression.cpp
+        BinaryTree.cpp
+        testingform.cpp
         mainwindow.h
+        Expression.h
+        BinaryTree.h
+        testingform.h
         mainwindow.ui
+        testingform.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
