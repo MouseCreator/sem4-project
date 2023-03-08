@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "testingform.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -23,6 +22,5 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    TestingForm* test_form;
 };
 #endif // MAINWINDOW_H

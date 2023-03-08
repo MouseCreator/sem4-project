@@ -14,12 +14,3 @@ MainWindow::~MainWindow()
 }
 
 
-
-
-
-void MainWindow::on_pushButton_clicked()
-{
-    test_form = new TestingForm(this);
-    test_form->show();
-}
-

@@ -1,6 +1,5 @@
 D:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Modelium_autogen/EWIEGA46WW/moc_mainwindow.cpp: D:/QT_projects/sem4-project/cpp/Modelium/mainwindow.h \
   D:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Modelium_autogen/moc_predefs.h \
-  D:/QT_projects/sem4-project/cpp/Modelium/testingform.h \
   D:/Qt/6.4.0/mingw_64/include/QtCore/qalgorithms.h \
   D:/Qt/6.4.0/mingw_64/include/QtCore/qanystringview.h \
   D:/Qt/6.4.0/mingw_64/include/QtCore/qarraydata.h \
@@ -109,9 +108,7 @@ D:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Deb
   D:/Qt/6.4.0/mingw_64/include/QtGui/qtransform.h \
   D:/Qt/6.4.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Qt/6.4.0/mingw_64/include/QtGui/qwindowdefs_win.h \
-  D:/Qt/6.4.0/mingw_64/include/QtWidgets/QDialog \
   D:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
-  D:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
   D:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/Qt/6.4.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \

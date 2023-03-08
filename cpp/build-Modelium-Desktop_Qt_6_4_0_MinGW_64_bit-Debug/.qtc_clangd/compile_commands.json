@@ -344,10 +344,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "D:\\QT_projects\\sem4-project\\cpp\\Modelium\\testingform.cpp"
+        "D:\\QT_projects\\sem4-project\\cpp\\Modelium\\model.cpp"
     ],
     "directory": "D:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "D:/QT_projects/sem4-project/cpp/Modelium/testingform.cpp"
+    "file": "D:/QT_projects/sem4-project/cpp/Modelium/model.cpp"
 },
 {
     "arguments": [
@@ -624,9 +624,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "D:\\QT_projects\\sem4-project\\cpp\\Modelium\\testingform.h"
+        "D:\\QT_projects\\sem4-project\\cpp\\Modelium\\model.h"
     ],
     "directory": "D:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "D:/QT_projects/sem4-project/cpp/Modelium/testingform.h"
+    "file": "D:/QT_projects/sem4-project/cpp/Modelium/model.h"
 }
 ]

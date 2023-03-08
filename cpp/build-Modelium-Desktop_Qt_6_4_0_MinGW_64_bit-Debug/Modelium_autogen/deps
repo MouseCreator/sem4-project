@@ -7,8 +7,8 @@ Modelium_autogen/timestamp: \
 	D:/QT_projects/sem4-project/cpp/Modelium/main.cpp \
 	D:/QT_projects/sem4-project/cpp/Modelium/mainwindow.cpp \
 	D:/QT_projects/sem4-project/cpp/Modelium/mainwindow.h \
-	D:/QT_projects/sem4-project/cpp/Modelium/testingform.cpp \
-	D:/QT_projects/sem4-project/cpp/Modelium/testingform.h \
+	D:/QT_projects/sem4-project/cpp/Modelium/model.cpp \
+	D:/QT_projects/sem4-project/cpp/Modelium/model.h \
 	D:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake \
 	D:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake \
 	D:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeSystem.cmake \
@@ -121,9 +121,7 @@ Modelium_autogen/timestamp: \
 	D:/Qt/6.4.0/mingw_64/include/QtGui/qtransform.h \
 	D:/Qt/6.4.0/mingw_64/include/QtGui/qwindowdefs.h \
 	D:/Qt/6.4.0/mingw_64/include/QtGui/qwindowdefs_win.h \
-	D:/Qt/6.4.0/mingw_64/include/QtWidgets/QDialog \
 	D:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
-	D:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 	D:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
 	D:/Qt/6.4.0/mingw_64/include/QtWidgets/qsizepolicy.h \
 	D:/Qt/6.4.0/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -512,5 +510,4 @@ Modelium_autogen/timestamp: \
 	D:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
 	D:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
 	D:/QT_projects/sem4-project/cpp/Modelium/mainwindow.ui \
-	D:/QT_projects/sem4-project/cpp/Modelium/testingform.ui \
 	D:/Qt/Tools/CMake_64/bin/cmake.exe

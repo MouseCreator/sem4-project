@@ -274,9 +274,9 @@
 			null
 		],
 		[
-			"D:/QT_projects/sem4-project/cpp/Modelium/testingform.h",
+			"D:/QT_projects/sem4-project/cpp/Modelium/model.h",
 			"MU",
-			"EWIEGA46WW/moc_testingform.cpp",
+			"EWIEGA46WW/moc_model.cpp",
 			null
 		]
 	],
@@ -355,11 +355,7 @@
 		[ "D:/QT_projects/sem4-project/cpp/Modelium/Expression.cpp", "MU", null ],
 		[ "D:/QT_projects/sem4-project/cpp/Modelium/main.cpp", "MU", null ],
 		[ "D:/QT_projects/sem4-project/cpp/Modelium/mainwindow.cpp", "MU", null ],
-		[
-			"D:/QT_projects/sem4-project/cpp/Modelium/testingform.cpp",
-			"MU",
-			null
-		]
+		[ "D:/QT_projects/sem4-project/cpp/Modelium/model.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

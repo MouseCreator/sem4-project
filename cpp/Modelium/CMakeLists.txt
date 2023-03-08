@@ -19,13 +19,12 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         Expression.cpp
         BinaryTree.cpp
-        testingform.cpp
+        model.cpp
         mainwindow.h
         Expression.h
         BinaryTree.h
-        testingform.h
+        model.h
         mainwindow.ui
-        testingform.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
