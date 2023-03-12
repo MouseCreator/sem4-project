@@ -1,8 +1,9 @@
 package vtm.team.service;
 
+import org.springframework.stereotype.Component;
 import vtm.team.dto.ModelDto;
 import vtm.team.model.Model;
-
+@Component
 public class ModelMapper {
 
     public ModelDto parse(Model model) {
