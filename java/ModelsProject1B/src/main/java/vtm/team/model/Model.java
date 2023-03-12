@@ -1,16 +1,17 @@
 package vtm.team.model;
 
 import java.util.Map;
-
 public class Model {
-    private String name;
-    private String type;
-    private String description;
 
-    private String[] formulas;
 
-    private Map<Integer, String> graphMap;
-    private Map<String, String> varsDescription;
+    private final String name;
+    private final String type;
+    private final String description;
+
+    private final String[] formulas;
+
+    private final Map<Integer, String> graphMap;
+    private final Map<String, String> varsDescription;
 
     public Model(String name, String type, String description, String[] formulas,
                  Map<Integer, String> graphMap, Map<String, String> varsDescription) {
@@ -20,5 +21,29 @@ public class Model {
         this.formulas = formulas;
         this.graphMap = graphMap;
         this.varsDescription = varsDescription;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String[] getFormulas() {
+        return formulas;
+    }
+
+    public Map<Integer, String> getGraphMap() {
+        return graphMap;
+    }
+
+    public Map<String, String> getVarsDescription() {
+        return varsDescription;
     }
 }
