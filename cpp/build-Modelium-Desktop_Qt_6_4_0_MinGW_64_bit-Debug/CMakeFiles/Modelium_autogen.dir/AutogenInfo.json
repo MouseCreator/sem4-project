@@ -268,6 +268,24 @@
 			null
 		],
 		[
+			"D:/QT_projects/sem4-project/cpp/Modelium/Graph.h",
+			"MU",
+			"EWIEGA46WW/moc_Graph.cpp",
+			null
+		],
+		[
+			"D:/QT_projects/sem4-project/cpp/Modelium/feature.h",
+			"MU",
+			"EWIEGA46WW/moc_feature.cpp",
+			null
+		],
+		[
+			"D:/QT_projects/sem4-project/cpp/Modelium/formula.h",
+			"MU",
+			"EWIEGA46WW/moc_formula.cpp",
+			null
+		],
+		[
 			"D:/QT_projects/sem4-project/cpp/Modelium/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -277,6 +295,12 @@
 			"D:/QT_projects/sem4-project/cpp/Modelium/model.h",
 			"MU",
 			"EWIEGA46WW/moc_model.cpp",
+			null
+		],
+		[
+			"D:/QT_projects/sem4-project/cpp/Modelium/savedmodel.h",
+			"MU",
+			"EWIEGA46WW/moc_savedmodel.cpp",
 			null
 		]
 	],
@@ -353,9 +377,13 @@
 	[
 		[ "D:/QT_projects/sem4-project/cpp/Modelium/BinaryTree.cpp", "MU", null ],
 		[ "D:/QT_projects/sem4-project/cpp/Modelium/Expression.cpp", "MU", null ],
+		[ "D:/QT_projects/sem4-project/cpp/Modelium/Graph.cpp", "MU", null ],
+		[ "D:/QT_projects/sem4-project/cpp/Modelium/feature.cpp", "MU", null ],
+		[ "D:/QT_projects/sem4-project/cpp/Modelium/formula.cpp", "MU", null ],
 		[ "D:/QT_projects/sem4-project/cpp/Modelium/main.cpp", "MU", null ],
 		[ "D:/QT_projects/sem4-project/cpp/Modelium/mainwindow.cpp", "MU", null ],
-		[ "D:/QT_projects/sem4-project/cpp/Modelium/model.cpp", "MU", null ]
+		[ "D:/QT_projects/sem4-project/cpp/Modelium/model.cpp", "MU", null ],
+		[ "D:/QT_projects/sem4-project/cpp/Modelium/savedmodel.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

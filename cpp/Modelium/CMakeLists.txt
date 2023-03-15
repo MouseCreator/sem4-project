@@ -20,10 +20,18 @@ set(PROJECT_SOURCES
         Expression.cpp
         BinaryTree.cpp
         model.cpp
+        Graph.cpp
+        savedmodel.cpp
+        feature.cpp
+        formula.cpp
         mainwindow.h
         Expression.h
         BinaryTree.h
+        Graph.h
         model.h
+        savedmodel.h
+        feature.h
+        formula.h
         mainwindow.ui
 )
 

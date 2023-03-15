@@ -97,6 +97,38 @@ build CMakeFiles/Modelium.dir/model.cpp.obj: CXX_COMPILER__Modelium_Debug D$:/QT
   OBJECT_DIR = CMakeFiles\Modelium.dir
   OBJECT_FILE_DIR = CMakeFiles\Modelium.dir
 
+build CMakeFiles/Modelium.dir/Graph.cpp.obj: CXX_COMPILER__Modelium_Debug D$:/QT_projects/sem4-project/cpp/Modelium/Graph.cpp || cmake_object_order_depends_target_Modelium
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Modelium.dir\Graph.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
+  INCLUDES = -ID:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug -ID:/QT_projects/sem4-project/cpp/Modelium -ID:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Modelium_autogen/include -isystem D:/Qt/6.4.0/mingw_64/include/QtCore -isystem D:/Qt/6.4.0/mingw_64/include -isystem D:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.4.0/mingw_64/include/QtWidgets -isystem D:/Qt/6.4.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\Modelium.dir
+  OBJECT_FILE_DIR = CMakeFiles\Modelium.dir
+
+build CMakeFiles/Modelium.dir/savedmodel.cpp.obj: CXX_COMPILER__Modelium_Debug D$:/QT_projects/sem4-project/cpp/Modelium/savedmodel.cpp || cmake_object_order_depends_target_Modelium
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Modelium.dir\savedmodel.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
+  INCLUDES = -ID:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug -ID:/QT_projects/sem4-project/cpp/Modelium -ID:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Modelium_autogen/include -isystem D:/Qt/6.4.0/mingw_64/include/QtCore -isystem D:/Qt/6.4.0/mingw_64/include -isystem D:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.4.0/mingw_64/include/QtWidgets -isystem D:/Qt/6.4.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\Modelium.dir
+  OBJECT_FILE_DIR = CMakeFiles\Modelium.dir
+
+build CMakeFiles/Modelium.dir/feature.cpp.obj: CXX_COMPILER__Modelium_Debug D$:/QT_projects/sem4-project/cpp/Modelium/feature.cpp || cmake_object_order_depends_target_Modelium
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Modelium.dir\feature.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
+  INCLUDES = -ID:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug -ID:/QT_projects/sem4-project/cpp/Modelium -ID:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Modelium_autogen/include -isystem D:/Qt/6.4.0/mingw_64/include/QtCore -isystem D:/Qt/6.4.0/mingw_64/include -isystem D:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.4.0/mingw_64/include/QtWidgets -isystem D:/Qt/6.4.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\Modelium.dir
+  OBJECT_FILE_DIR = CMakeFiles\Modelium.dir
+
+build CMakeFiles/Modelium.dir/formula.cpp.obj: CXX_COMPILER__Modelium_Debug D$:/QT_projects/sem4-project/cpp/Modelium/formula.cpp || cmake_object_order_depends_target_Modelium
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Modelium.dir\formula.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17
+  INCLUDES = -ID:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug -ID:/QT_projects/sem4-project/cpp/Modelium -ID:/QT_projects/sem4-project/cpp/build-Modelium-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/Modelium_autogen/include -isystem D:/Qt/6.4.0/mingw_64/include/QtCore -isystem D:/Qt/6.4.0/mingw_64/include -isystem D:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.4.0/mingw_64/include/QtWidgets -isystem D:/Qt/6.4.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\Modelium.dir
+  OBJECT_FILE_DIR = CMakeFiles\Modelium.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Modelium
@@ -105,7 +137,7 @@ build CMakeFiles/Modelium.dir/model.cpp.obj: CXX_COMPILER__Modelium_Debug D$:/QT
 #############################################
 # Link the executable Modelium.exe
 
-build Modelium.exe: CXX_EXECUTABLE_LINKER__Modelium_Debug CMakeFiles/Modelium.dir/Modelium_autogen/mocs_compilation.cpp.obj CMakeFiles/Modelium.dir/main.cpp.obj CMakeFiles/Modelium.dir/mainwindow.cpp.obj CMakeFiles/Modelium.dir/Expression.cpp.obj CMakeFiles/Modelium.dir/BinaryTree.cpp.obj CMakeFiles/Modelium.dir/model.cpp.obj | D$:/Qt/6.4.0/mingw_64/lib/libQt6Widgets.a D$:/Qt/6.4.0/mingw_64/lib/libQt6Gui.a D$:/Qt/6.4.0/mingw_64/lib/libQt6Core.a D$:/Qt/6.4.0/mingw_64/lib/libQt6EntryPoint.a || Modelium_autogen Modelium_autogen_timestamp_deps
+build Modelium.exe: CXX_EXECUTABLE_LINKER__Modelium_Debug CMakeFiles/Modelium.dir/Modelium_autogen/mocs_compilation.cpp.obj CMakeFiles/Modelium.dir/main.cpp.obj CMakeFiles/Modelium.dir/mainwindow.cpp.obj CMakeFiles/Modelium.dir/Expression.cpp.obj CMakeFiles/Modelium.dir/BinaryTree.cpp.obj CMakeFiles/Modelium.dir/model.cpp.obj CMakeFiles/Modelium.dir/Graph.cpp.obj CMakeFiles/Modelium.dir/savedmodel.cpp.obj CMakeFiles/Modelium.dir/feature.cpp.obj CMakeFiles/Modelium.dir/formula.cpp.obj | D$:/Qt/6.4.0/mingw_64/lib/libQt6Widgets.a D$:/Qt/6.4.0/mingw_64/lib/libQt6Gui.a D$:/Qt/6.4.0/mingw_64/lib/libQt6Core.a D$:/Qt/6.4.0/mingw_64/lib/libQt6EntryPoint.a || Modelium_autogen Modelium_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = D:/Qt/6.4.0/mingw_64/lib/libQt6Widgets.a  D:/Qt/6.4.0/mingw_64/lib/libQt6Gui.a  D:/Qt/6.4.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  D:/Qt/6.4.0/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
