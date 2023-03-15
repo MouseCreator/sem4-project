@@ -3,7 +3,7 @@ package vtm.team.models.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "savedModels")
+@Table(name = "models")
 public class Model {
 
     @Id

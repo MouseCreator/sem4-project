@@ -9,4 +9,6 @@ public interface ModelService {
 
     List<Model> findAll();
 
+    List<Model> findAllByNameContainingIgnoreCase(String substring);
+
 }
