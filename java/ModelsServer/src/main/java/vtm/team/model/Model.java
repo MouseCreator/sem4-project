@@ -3,7 +3,6 @@ package vtm.team.model;
 import java.util.Map;
 public class Model {
 
-
     private final String name;
     private final String type;
     private final String description;
@@ -46,4 +45,5 @@ public class Model {
     public Map<String, String> getVarsDescription() {
         return varsDescription;
     }
+
 }

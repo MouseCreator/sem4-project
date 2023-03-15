@@ -1,13 +1,13 @@
 package vtm.team.service;
 
 import org.springframework.stereotype.Component;
-import vtm.team.dto.ModelDto;
+import vtm.team.dto.ModelResponseDto;
 import vtm.team.model.Model;
 @Component
 public class ModelMapper {
 
-    public ModelDto parse(Model model) {
-        ModelDto modelDto = new ModelDto();
+    public ModelResponseDto parse(Model model) {
+        ModelResponseDto modelDto = new ModelResponseDto();
         modelDto.setName(model.getName());
         modelDto.setDescription(model.getDescription());
         modelDto.setFormulas(model.getFormulas());
