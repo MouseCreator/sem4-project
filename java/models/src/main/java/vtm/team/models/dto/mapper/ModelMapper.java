@@ -8,9 +8,18 @@ import vtm.team.models.model.Model;
 @Component
 public class ModelMapper {
     public ModelResponseDto toResponseDto(Model model) {
-        return null;
+        ModelResponseDto responseDto = new ModelResponseDto();
+        responseDto.setId(model.getId());
+        responseDto.setAuthor(model.getAuthor());
+        responseDto.setDescription(model.getDescription());
+        responseDto.setName(model.getName());
+        return responseDto;
     }
-    public Model toModel(ModelRequestDto model) {
-        return null;
+    public Model toModel(ModelRequestDto requestDto) {
+        Model model = new Model();
+        model.setAuthor(requestDto.getAuthor());
+        model.setDescription(requestDto.getDescription());
+        model.setName(requestDto.getName());
+        return model;
     }
 }

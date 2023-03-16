@@ -1,8 +1,10 @@
 package vtm.team.models.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
 @Table(name = "models")
 public class Model {
 
@@ -19,31 +21,6 @@ public class Model {
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 '}';
-    }
-
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     private String author;
