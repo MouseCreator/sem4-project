@@ -2,6 +2,7 @@ package vtm.team.models.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import vtm.team.models.dto.ModelDeleteDto;
 import vtm.team.models.dto.ModelRequestDto;
 import vtm.team.models.dto.ModelResponseDto;
 import vtm.team.models.dto.mapper.ModelMapper;
@@ -58,7 +59,7 @@ public class ModelController {
                 .map(mapper::toResponseDto).collect(Collectors.toList());
     }
     @DeleteMapping
-    public ModelResponseDto delete(@RequestBody ModelRequestDto requestDto) {
-        return null;
+    public void delete(@RequestBody ModelDeleteDto requestDto) {
+        service.deleteById(requestDto.getId());
     }
 }

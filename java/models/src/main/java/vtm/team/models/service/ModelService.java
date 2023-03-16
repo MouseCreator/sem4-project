@@ -12,4 +12,5 @@ public interface ModelService {
 
     List<Model> findAllByNameContainingIgnoreCase(String substring);
 
+    void deleteById(long id);
 }

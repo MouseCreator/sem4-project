@@ -40,4 +40,9 @@ public class ModelServiceImpl implements ModelService {
     public List<Model> findAllByNameContainingIgnoreCase(String substring) {
         return repository.findAllByNameContainingIgnoreCase(substring);
     }
+
+    @Override
+    public void deleteById(long id) {
+        repository.deleteById(id);
+    }
 }
