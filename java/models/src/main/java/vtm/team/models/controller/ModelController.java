@@ -9,6 +9,7 @@ import vtm.team.models.model.Model;
 import vtm.team.models.service.ModelService;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @RestController
@@ -52,7 +53,8 @@ public class ModelController {
         return mapper.toResponseDto(savedModel);
     }
     @GetMapping
-    public List<ModelResponseDto> getAll() {
-        return service.findAll().stream().map(mapper::toResponseDto).collect(Collectors.toList());
+    public List<ModelResponseDto> getAll(@RequestParam Map<String, String> params) {
+        return service.findAll(params).stream()
+                .map(mapper::toResponseDto).collect(Collectors.toList());
     }
 }
