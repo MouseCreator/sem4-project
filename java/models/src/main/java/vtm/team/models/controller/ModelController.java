@@ -1,20 +1,26 @@
 package vtm.team.models.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import vtm.team.models.dto.ModelRequestDto;
+import vtm.team.models.dto.ModelResponseDto;
+import vtm.team.models.dto.mapper.ModelMapper;
 import vtm.team.models.model.Model;
 import vtm.team.models.service.ModelService;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("models")
 public class ModelController {
 
     private final ModelService service;
+    private final ModelMapper mapper;
     @Autowired
-    public ModelController(ModelService service) {
+    public ModelController(ModelService service, ModelMapper mapper) {
         this.service = service;
+        this.mapper = mapper;
     }
 
     @GetMapping("/inject")
@@ -39,5 +45,14 @@ public class ModelController {
 
         service.findAllByNameContainingIgnoreCase("Phy").forEach(System.out::println);
         System.out.println("Reloaded");
+    }
+    @PostMapping
+    public ModelResponseDto create(@RequestBody ModelRequestDto requestDto) {
+        Model savedModel = service.save(mapper.toModel(requestDto));
+        return mapper.toResponseDto(savedModel);
+    }
+    @GetMapping
+    public List<ModelResponseDto> getAll() {
+        return service.findAll().stream().map(mapper::toResponseDto).collect(Collectors.toList());
     }
 }
