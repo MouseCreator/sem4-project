@@ -57,4 +57,8 @@ public class ModelController {
         return service.findAll(params).stream()
                 .map(mapper::toResponseDto).collect(Collectors.toList());
     }
+    @DeleteMapping
+    public ModelResponseDto delete(@RequestBody ModelRequestDto requestDto) {
+        return null;
+    }
 }
