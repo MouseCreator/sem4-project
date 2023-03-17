@@ -9,8 +9,9 @@ public class DocumentationManager {
 
         for (Field field : declaredFields) {
             if (field.isAnnotationPresent(DocumentationPart.class)) {
-                if (field.getDeclaringClass().)
+                ;
             }
         }
+        return null;
     }
 }
