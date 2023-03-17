@@ -14,7 +14,7 @@ public class FileLogger implements Logger {
     @Override
     public void log(String message) {
         try {
-            String filename = "files/output.txt";
+            String filename = "src/main/resources/files/output.txt";
             BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true));
             writer.write(Dates.timeDate() + message);
             writer.newLine();
