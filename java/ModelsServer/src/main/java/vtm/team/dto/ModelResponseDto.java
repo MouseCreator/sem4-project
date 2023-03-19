@@ -2,7 +2,9 @@ package vtm.team.dto;
 
 import java.util.Map;
 
-public class ModelDto {
+public class ModelResponseDto {
+
+    private int id;
     public String getName() {
         return name;
     }
@@ -59,4 +61,12 @@ public class ModelDto {
 
     private Map<Integer, String> graphMap;
     private Map<String, String> varsDescription;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
