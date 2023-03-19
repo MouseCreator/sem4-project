@@ -13,7 +13,6 @@ public:
 protected:
     std::vector<Formula> formulas;
     std::vector<Graph> graphs;
-   // std::vector<int[2]> pairs;
 };
 
 #endif // MODEL_H
