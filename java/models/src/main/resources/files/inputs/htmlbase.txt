@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>%s</title>
+        <styles>
+
+        </styles>
+    </head>
+    <body>
+        %s
+    </body>
+</html>
