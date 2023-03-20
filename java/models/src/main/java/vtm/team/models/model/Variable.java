@@ -17,4 +17,6 @@ public class Variable {
     private VariableType type;
     private String name;
 
+    private double initialValue;
+
 }

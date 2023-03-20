@@ -21,5 +21,8 @@ public class Model {
     @OneToMany
     private List<Variable> variables;
 
+    @OneToMany
+    private List<Graph> graphs;
+
 
 }
