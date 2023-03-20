@@ -13,10 +13,6 @@ public class Model {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-
-
-
     private String author;
     private String name;
     private String description;
