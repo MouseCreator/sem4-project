@@ -17,17 +17,19 @@ SOURCES += \
     model.cpp \
     Graph.cpp \
     savedmodel.cpp \
-    feature.cpp
+    feature.cpp \
+    variable.cpp
 
 HEADERS += \
     mainwindow.h \
-    BinaryTree.cpp \
+    BinaryTree.h \
     Expression.h \
     formula.h \
     model.h \
     Graph.h \
     savedmodel.h \
-    feature.cpp
+    feature.h \
+    variable.h
 
 FORMS += \
     mainwindow.ui
