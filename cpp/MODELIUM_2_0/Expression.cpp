@@ -3,6 +3,7 @@
 #include<cmath>
 #include<algorithm>
 #include <string>
+#include <QMessageBox>
 
 
 namespace expr
@@ -27,8 +28,13 @@ namespace expr
             GenSubTree(&this->tree.root, start);
         }
         catch (std::runtime_error& e) {
-            std::cout << "Runtime error occured:\n " << e.what() << std::endl;
-            throw std::runtime_error(" ");
+            //std::cout << "Runtime error occured:\n " << e.what() << std::endl;
+            //throw std::runtime_error(" ");
+            QMessageBox error_box;
+            error_box.setText("Invalid input (missing/extra brackets or invalid symbols\n");
+            error_box.setIcon(QMessageBox::Critical);
+            error_box.setWindowTitle("Input Error");
+            error_box.exec();
         }
     }
 
@@ -139,8 +145,9 @@ namespace expr
             case ')':
                 while (operations.empty() || operations.top() != "(")
                 {
-                    if (operations.empty())
+                    if (operations.empty()){
                         throw std::runtime_error("Input error: Brackets correctness error\n");
+                    }
 
                     rpn.push_back(operations.top());
                     operations.pop();

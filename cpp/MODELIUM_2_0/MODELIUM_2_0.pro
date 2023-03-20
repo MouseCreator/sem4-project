@@ -16,6 +16,7 @@ SOURCES += \
     formula.cpp \
     model.cpp \
     Graph.cpp \
+    modelform.cpp \
     savedmodel.cpp \
     feature.cpp \
     variable.cpp
@@ -27,12 +28,14 @@ HEADERS += \
     formula.h \
     model.h \
     Graph.h \
+    modelform.h \
     savedmodel.h \
     feature.h \
     variable.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    modelform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
