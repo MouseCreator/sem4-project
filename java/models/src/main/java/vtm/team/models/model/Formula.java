@@ -11,5 +11,4 @@ public class Formula {
     private Long id;
     private String formula;
     private String description;
-
 }

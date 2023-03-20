@@ -9,11 +9,11 @@ public class Variable {
     @Id
     private Long id;
 
-
     public enum VariableType {
         CONSTANT, CHANGEABLE, CALCULATED
     }
 
     private VariableType type;
     private String name;
+
 }

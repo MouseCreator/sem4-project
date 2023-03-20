@@ -25,14 +25,5 @@ public class Model {
     @OneToMany
     private List<Variable> variables;
 
-    @Override
-    public String toString() {
-        return "SavedModel{" +
-                "id=" + id +
-                ", author='" + author + '\'' +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                '}';
-    }
 
 }
