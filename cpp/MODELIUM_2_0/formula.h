@@ -8,17 +8,19 @@
 class Formula
 {
 private:
+    std::string name;
     std::string formula;
 public:
     std::vector<Variable> vars;
     expr::Expression expression;
-    Formula(std::string formula){
+    Formula(std::string formula, std::string name = "formula"){
         expression = expr::Expression(formula);
+        std::vector<std::string> input_vars = expression.get_vars();
+        for(int i = 0; i < input_vars.size(); i++){
+            vars.push_back(Variable(input_vars[i]));
+        }
+        this->name = name;
     };
-
-    void add_var(Variable var){
-        vars.push_back(var);
-    }
 
     std::string compute(){
         std::map<std::string, double> var_map;
@@ -26,6 +28,10 @@ public:
             var_map.insert({vars[i].get_name(), vars[i].value});
         }
         return std::to_string(expression.CalculateExpression(var_map));
+    }
+
+    std::string get_name(){
+        return name;
     }
 
     std::vector<std::string> get_vars(){

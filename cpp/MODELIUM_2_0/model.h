@@ -8,7 +8,7 @@
 class Model
 {
 public:
-    Model();
+    Model(){};
 
     void add_formula(Formula formula){
         this->formulas.push_back(formula);

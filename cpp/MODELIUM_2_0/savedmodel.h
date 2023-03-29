@@ -7,7 +7,31 @@
 class SavedModel : public Model
 {
 public:
-    SavedModel();
+    SavedModel(){};
+
+    void set_author(std::string author){
+        this->author = author;
+    }
+
+    void set_name(std::string name){
+        this->name = name;
+    }
+
+    void set_description(std::string description){
+        this->description = description;
+    }
+
+    std::string get_author(){
+        return author;
+    }
+
+    std::string get_name(){
+        return name;
+    }
+
+    std::string get_description(){
+        return description;
+    }
 private:
     std::string author;
     std::string name;

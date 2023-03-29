@@ -18,6 +18,8 @@ public:
 private:
     Ui::ModelForm *ui;
     SavedModel* model;
+
+    void set_ui();
 };
 
 #endif // MODELFORM_H

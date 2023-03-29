@@ -6,12 +6,13 @@
 class Variable
 {
 public:
-    Variable(std::string name){
+    Variable(std::string name, double default_val = 1.0){
         this->name = name;
         is_const = false;
-        default_val = 1.0;
+        this->default_val = default_val;
+        value = default_val;
     };
-    double value = default_val;
+    double value;
 
     std::string get_name(){
         return this->name;

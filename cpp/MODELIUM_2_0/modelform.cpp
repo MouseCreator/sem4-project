@@ -3,6 +3,7 @@
 #include <QScrollArea>
 #include <QLayout>
 #include <QLabel>
+#include <QTextEdit>
 #include "ui_modelform.h"
 
 ModelForm::ModelForm(SavedModel* model, QWidget *parent) :
@@ -11,7 +12,8 @@ ModelForm::ModelForm(SavedModel* model, QWidget *parent) :
 {
     ui->setupUi(this);
     this->model = model;
-    Formula f1("x+y+z");
+    set_ui();
+    /*Formula f1("x+y+z");
     std::vector<std::string> vars = f1.get_vars();
     for(int i = 0; i < vars.size(); i++){
         Variable var(vars[i]);
@@ -33,7 +35,7 @@ ModelForm::ModelForm(SavedModel* model, QWidget *parent) :
     /*for(int i = 0; i < 60; i++){
         QLabel* test_label = new QLabel(QString("TEST WORD"));
         vlayout->addWidget(test_label);
-    }*/
+    }
     QLabel* label1 = new QLabel(QString("Formula 1"));
     vlayout->addWidget(label1);
     QWidget* var_widget1 = new QWidget;
@@ -70,10 +72,49 @@ ModelForm::ModelForm(SavedModel* model, QWidget *parent) :
     vlayout->addWidget(var_scroll2);
 
     QVBoxLayout* main_layout = ui->verticalLayout;
-    main_layout->addWidget(scroll);
+    main_layout->addWidget(scroll);*/
 }
+
+
 
 ModelForm::~ModelForm()
 {
     delete ui;
+}
+
+void ModelForm::set_ui()
+{
+    QWidget* main_wg = new QWidget;
+    QScrollArea* main_scroll = new QScrollArea;
+    QVBoxLayout* main_vlayout = new QVBoxLayout(main_wg);
+    main_scroll->setWidget(main_wg);
+    main_scroll->setWidgetResizable(true);
+    for(int i = 0; i < model->formulas.size(); i++){
+        QLabel* lab = new QLabel(QString::fromUtf8(model->formulas[i].get_name()));
+        main_vlayout->addWidget(lab);
+        QWidget* var_wg = new QWidget;
+        QScrollArea* var_scroll = new QScrollArea;
+        var_scroll->setMaximumHeight(200);
+        var_scroll->setMinimumHeight(40);
+        QVBoxLayout* var_vlayout = new QVBoxLayout(var_wg);
+        var_scroll->setWidget(var_wg);
+        var_scroll->setWidgetResizable(true);
+        for(int j = 0 ; j < model->formulas[i].vars.size(); j++){
+            QWidget* wg = new QWidget;
+            QLabel* lab = new QLabel(QString::fromUtf8(model->formulas[i].vars[j].get_name()));
+            QTextEdit* val_ed = new QTextEdit();
+            val_ed->setPlaceholderText(QString::number(model->formulas[i].vars[j].value));
+            val_ed->setMaximumHeight(30);
+            val_ed->setMaximumWidth(200);
+            QHBoxLayout* hlayout = new QHBoxLayout(wg);
+            if(model->formulas[i].vars[j].is_constant()){
+                val_ed->setReadOnly(true);
+            }
+            hlayout->addWidget(lab);
+            hlayout->addWidget(val_ed);
+            var_vlayout->addWidget(wg);
+        }
+        main_vlayout->addWidget(var_scroll);
+    }
+    ui->verticalLayout->addWidget(main_scroll);
 }
