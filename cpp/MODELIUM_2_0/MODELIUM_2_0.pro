@@ -19,8 +19,7 @@ SOURCES += \
     modelform.cpp \
     savedmodel.cpp \
     feature.cpp \
-    variable.cpp \
-    qcustomplot.cpp
+    variable.cpp
 
 HEADERS += \
     mainwindow.h \
@@ -32,8 +31,7 @@ HEADERS += \
     modelform.h \
     savedmodel.h \
     feature.h \
-    variable.h \
-    qcustomplot.h
+    variable.h
 
 FORMS += \
     mainwindow.ui \

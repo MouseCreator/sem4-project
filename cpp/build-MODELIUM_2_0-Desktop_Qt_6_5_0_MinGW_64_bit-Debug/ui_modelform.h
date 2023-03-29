@@ -12,7 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QScrollArea>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -20,22 +20,20 @@ QT_BEGIN_NAMESPACE
 class Ui_ModelForm
 {
 public:
-    QScrollArea *scrollArea;
-    QWidget *scrollAreaWidgetContents;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout;
 
     void setupUi(QDialog *ModelForm)
     {
         if (ModelForm->objectName().isEmpty())
             ModelForm->setObjectName("ModelForm");
-        ModelForm->resize(606, 564);
-        scrollArea = new QScrollArea(ModelForm);
-        scrollArea->setObjectName("scrollArea");
-        scrollArea->setGeometry(QRect(10, 20, 221, 81));
-        scrollArea->setWidgetResizable(true);
-        scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName("scrollAreaWidgetContents");
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 219, 79));
-        scrollArea->setWidget(scrollAreaWidgetContents);
+        ModelForm->resize(1263, 671);
+        verticalLayoutWidget = new QWidget(ModelForm);
+        verticalLayoutWidget->setObjectName("verticalLayoutWidget");
+        verticalLayoutWidget->setGeometry(QRect(10, 10, 321, 521));
+        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
 
         retranslateUi(ModelForm);
 

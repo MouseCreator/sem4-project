@@ -28,9 +28,9 @@ public:
         return std::to_string(expression.CalculateExpression(var_map));
     }
 
-    /*std::vector<std::string> get_vars(){
+    std::vector<std::string> get_vars(){
         return expression.get_vars();
-    }*/
+    }
 };
 
 #endif // FORMULA_H
