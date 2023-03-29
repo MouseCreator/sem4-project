@@ -1,4 +1,5 @@
 #include "modelform.h"
+#include "qboxlayout.h"
 #include "ui_modelform.h"
 
 ModelForm::ModelForm(SavedModel* model, QWidget *parent) :
@@ -7,6 +8,7 @@ ModelForm::ModelForm(SavedModel* model, QWidget *parent) :
 {
     ui->setupUi(this);
     this->model = model;
+
 }
 
 ModelForm::~ModelForm()

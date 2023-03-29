@@ -6,18 +6,25 @@
 class Variable
 {
 public:
-    Variable();
-    Variable(std::string name, bool is_const = false, double default_value = 1.0){
+    Variable(std::string name){
         this->name = name;
-        this->is_const = is_const;
-        this->default_val = default_value;
-        this->value = default_value;
+        is_const = false;
+        default_val = 1.0;
     };
-    double value;
+    double value = default_val;
 
     std::string get_name(){
         return this->name;
     }
+
+    void set_const(bool is_const){
+        this->is_const = is_const;
+    }
+
+    void set_def_val(double val){
+        this->default_val = val;
+    }
+
     bool is_constant(){
         return this->is_const;
     }

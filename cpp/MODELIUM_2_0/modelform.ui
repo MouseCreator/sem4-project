@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>606</width>
-    <height>564</height>
+    <width>1263</width>
+    <height>671</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QScrollArea" name="scrollArea">
+  <widget class="QScrollArea" name="formulaScrollArea">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>20</y>
-     <width>221</width>
-     <height>81</height>
+     <width>531</width>
+     <height>601</height>
     </rect>
    </property>
    <property name="widgetResizable">
@@ -30,8 +30,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>219</width>
-      <height>79</height>
+      <width>529</width>
+      <height>599</height>
      </rect>
     </property>
    </widget>

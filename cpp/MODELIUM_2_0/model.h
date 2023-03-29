@@ -10,7 +10,14 @@ class Model
 public:
     Model();
 
-protected:
+    void add_formula(Formula formula){
+        this->formulas.push_back(formula);
+    }
+
+    void add_graph(Graph graph){
+        this->graphs.push_back(graph);
+    }
+
     std::vector<Formula> formulas;
     std::vector<Graph> graphs;
 };
