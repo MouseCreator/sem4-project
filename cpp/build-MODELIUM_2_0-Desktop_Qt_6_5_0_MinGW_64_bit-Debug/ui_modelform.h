@@ -30,7 +30,7 @@ public:
         ModelForm->resize(1263, 671);
         verticalLayoutWidget = new QWidget(ModelForm);
         verticalLayoutWidget->setObjectName("verticalLayoutWidget");
-        verticalLayoutWidget->setGeometry(QRect(10, 10, 321, 521));
+        verticalLayoutWidget->setGeometry(QRect(10, 10, 321, 651));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);

@@ -14,6 +14,7 @@ public:
     std::vector<Variable> vars;
     expr::Expression expression;
     Formula(std::string formula, std::string name = "formula"){
+        this->formula = formula;
         expression = expr::Expression(formula);
         std::vector<std::string> input_vars = expression.get_vars();
         for(int i = 0; i < input_vars.size(); i++){
@@ -32,6 +33,10 @@ public:
 
     std::string get_name(){
         return name;
+    }
+
+    std::string get_formula(){
+        return this->formula;
     }
 
     std::vector<std::string> get_vars(){

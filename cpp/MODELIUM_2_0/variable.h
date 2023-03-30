@@ -26,6 +26,10 @@ public:
         this->default_val = val;
     }
 
+    void reset_to_def(){
+        value = default_val;
+    }
+
     bool is_constant(){
         return this->is_const;
     }
