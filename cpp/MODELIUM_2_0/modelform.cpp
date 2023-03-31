@@ -101,7 +101,16 @@ void ModelForm::compute_single_formula(int id)
             model->formulas[id].vars[j].value = new_val;
         }
     }
-    res_labels[id]->setText(QString::fromUtf8(model->formulas[id].compute()));
+    try {
+        res_labels[id]->setText(QString::fromUtf8(model->formulas[id].compute()));
+    } catch (std::overflow_error& er) {
+        QMessageBox* error_box = new QMessageBox;
+        error_box->setText("Overflow error occurred\n");
+        error_box->setIcon(QMessageBox::Critical);
+        error_box->setWindowTitle("Input Error");
+        error_box->exec();
+    }
+
 }
 
 void ModelForm::compute_all()

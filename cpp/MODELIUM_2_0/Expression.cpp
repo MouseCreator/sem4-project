@@ -29,12 +29,12 @@ namespace expr
         }
         catch (std::runtime_error& e) {
             //std::cout << "Runtime error occured:\n " << e.what() << std::endl;
-            //throw std::runtime_error(" ");
-            QMessageBox* error_box = new QMessageBox;
+            throw std::runtime_error(" ");
+            /*QMessageBox* error_box = new QMessageBox;
             error_box->setText("Invalid input (missing or extra brackets or invalid symbols\n");
             error_box->setIcon(QMessageBox::Critical);
             error_box->setWindowTitle("Input Error");
-            error_box->exec();
+            error_box->exec();*/
         }
     }
 
@@ -478,11 +478,12 @@ namespace expr
         }
         catch (std::overflow_error& e) {
             //std::cout << "Overflow error occurred\n" << e.what();
-            QMessageBox* error_box = new QMessageBox;
+            throw std::overflow_error("Overflow error occurred!");
+            /*QMessageBox* error_box = new QMessageBox;
             error_box->setText("Overflow error occurred\n");
             error_box->setIcon(QMessageBox::Critical);
             error_box->setWindowTitle("Input Error");
-            error_box->exec();
+            error_box->exec();*/
         }
     }
 
