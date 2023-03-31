@@ -11,18 +11,26 @@ private:
     std::string name;
     std::string formula;
     bool is_broken = false;
+    //Equals to -1 if formula is static (does not change over time)
+    int time_var_id;
 public:
     std::vector<Variable> vars;
     expr::Expression expression;
-    Formula(std::string formula, std::string name = "formula"){
+    Formula(std::string formula, std::string name = "formula", std::string time_var_name = " "){
         this->formula = formula;
         this->name = name;
         try {
+            time_var_id = -1;
             expression = expr::Expression(formula);
             std::vector<std::string> input_vars = expression.get_vars();
             for(int i = 0; i < input_vars.size(); i++){
                 vars.push_back(Variable(input_vars[i]));
+                if(time_var_name == vars[i].get_name()){
+                    time_var_id = i;
+
+                }
             }
+
         }
         catch (std::runtime_error& e) {
             QMessageBox* error_box = new QMessageBox;
@@ -68,6 +76,10 @@ public:
             return std::vector<std::string>();
         }
         return expression.get_vars();
+    }
+
+    int get_time_var_id(){
+        return time_var_id;
     }
 };
 
