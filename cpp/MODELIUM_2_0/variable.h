@@ -12,7 +12,20 @@ public:
         this->default_val = default_val;
         value = default_val;
     };
+    Variable(Variable* orig){
+        this->name = orig->name;
+        this->default_val = orig->default_val;
+        this->is_const = orig->is_const;
+        this->value = orig->value;
+    }
     double value;
+
+    void clone(Variable* orig){
+        this->name = orig->name;
+        this->default_val = orig->default_val;
+        this->is_const = orig->is_const;
+        this->value = orig->value;
+    }
 
     std::string get_name(){
         return this->name;

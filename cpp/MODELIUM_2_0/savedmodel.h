@@ -8,7 +8,6 @@ class SavedModel : public Model
 {
 public:
     SavedModel(){};
-
     void set_author(std::string author){
         this->author = author;
     }
@@ -32,6 +31,7 @@ public:
     std::string get_description(){
         return description;
     }
+
 private:
     std::string author;
     std::string name;
