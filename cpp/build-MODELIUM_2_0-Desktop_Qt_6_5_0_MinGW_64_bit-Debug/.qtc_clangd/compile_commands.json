@@ -1776,10 +1776,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "D:\\QT_projects\\sem4-project\\cpp\\build-MODELIUM_2_0-Desktop_Qt_6_5_0_MinGW_64_bit-Debug\\ui_mainwindow.h"
+        "D:\\QT_projects\\sem4-project\\cpp\\build-MODELIUM_2_0-Desktop_Qt_6_5_0_MinGW_64_bit-Debug\\ui_modelform.h"
     ],
     "directory": "D:/QT_projects/sem4-project/cpp/build-MODELIUM_2_0-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "D:/QT_projects/sem4-project/cpp/build-MODELIUM_2_0-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/ui_mainwindow.h"
+    "file": "D:/QT_projects/sem4-project/cpp/build-MODELIUM_2_0-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/ui_modelform.h"
 },
 {
     "arguments": [
@@ -1857,9 +1857,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "D:\\QT_projects\\sem4-project\\cpp\\build-MODELIUM_2_0-Desktop_Qt_6_5_0_MinGW_64_bit-Debug\\ui_modelform.h"
+        "D:\\QT_projects\\sem4-project\\cpp\\build-MODELIUM_2_0-Desktop_Qt_6_5_0_MinGW_64_bit-Debug\\ui_mainwindow.h"
     ],
     "directory": "D:/QT_projects/sem4-project/cpp/build-MODELIUM_2_0-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "D:/QT_projects/sem4-project/cpp/build-MODELIUM_2_0-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/ui_modelform.h"
+    "file": "D:/QT_projects/sem4-project/cpp/build-MODELIUM_2_0-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/ui_mainwindow.h"
 }
 ]

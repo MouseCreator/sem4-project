@@ -1,5 +1,6 @@
 #include "modelform.h"
 #include "ui_modelform.h"
+#include <thread>
 
 ModelForm::ModelForm(SavedModel* model, QWidget *parent) :
     QDialog(parent),
@@ -148,8 +149,18 @@ void ModelForm::compute_single_formula(int id)
 
 void ModelForm::compute_all()
 {
-    for(int i = 0; i < model->formulas.size(); i++){
-        compute_single_formula(i);
+    std::vector<std::thread> solvers;
+    int thread_num = std::thread::hardware_concurrency();
+    for(int i = 0; i < model->formulas.size();){
+        for(int j = 0; j < thread_num && i < model->formulas.size(); j++, i++){
+            solvers.emplace_back(std::thread(&ModelForm::compute_single_formula, this, i));
+        }
+        for(int j = 0; j < solvers.size(); j++){
+            if(solvers[j].joinable()){
+                solvers[j].join();
+            }
+        }
+        solvers.clear();
     }
 }
 
