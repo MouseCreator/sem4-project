@@ -1,0 +1,13 @@
+release/main.o
+release/mainwindow.o
+release/BinaryTree.o
+release/Expression.o
+release/formula.o
+release/model.o
+release/Graph.o
+release/modelform.o
+release/savedmodel.o
+release/feature.o
+release/variable.o
+release/moc_mainwindow.o
+release/moc_modelform.o

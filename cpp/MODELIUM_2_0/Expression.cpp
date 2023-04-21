@@ -3,6 +3,7 @@
 #include<cmath>
 #include<algorithm>
 #include <string>
+#include <QMessageBox>
 
 
 namespace expr
@@ -27,8 +28,13 @@ namespace expr
             GenSubTree(&this->tree.root, start);
         }
         catch (std::runtime_error& e) {
-            std::cout << "Runtime error occured:\n " << e.what() << std::endl;
+            //std::cout << "Runtime error occured:\n " << e.what() << std::endl;
             throw std::runtime_error(" ");
+            /*QMessageBox* error_box = new QMessageBox;
+            error_box->setText("Invalid input (missing or extra brackets or invalid symbols\n");
+            error_box->setIcon(QMessageBox::Critical);
+            error_box->setWindowTitle("Input Error");
+            error_box->exec();*/
         }
     }
 
@@ -139,8 +145,9 @@ namespace expr
             case ')':
                 while (operations.empty() || operations.top() != "(")
                 {
-                    if (operations.empty())
+                    if (operations.empty()){
                         throw std::runtime_error("Input error: Brackets correctness error\n");
+                    }
 
                     rpn.push_back(operations.top());
                     operations.pop();
@@ -223,16 +230,14 @@ namespace expr
     {
         if (!node_1 && !node_2)
             return true;
-        else if (!node_1 && node_2 || node_1 && !node_2)
+        else if ((!node_1 && node_2) || (node_1 && !node_2))
             return false;
         else
-            if (node_1->data == node_2->data ||
-                isNumber(node_1->data) && isNumber(node_2->data) &&
-                std::stod(node_1->data) == std::stod(node_2->data))
+            if (node_1->data == node_2->data || (isNumber(node_1->data) && isNumber(node_2->data) && std::stod(node_1->data) == std::stod(node_2->data)))
             {
                 if (node_1->data == "+" || node_1->data == "*")
-                    return (Compare(node_1->left, node_2->left) && Compare(node_1->right, node_2->right) ||
-                        Compare(node_1->left, node_2->right) && Compare(node_1->right, node_2->left));
+                    return ((Compare(node_1->left, node_2->left) && Compare(node_1->right, node_2->right)) ||
+                        (Compare(node_1->left, node_2->right) && Compare(node_1->right, node_2->left)));
                 else
                     if (isUnaryFunction(node_1->data)) {
                         return Compare(node_1->right, node_2->right);
@@ -434,7 +439,7 @@ namespace expr
             return pow(arg_1, arg_2);
         else if (function == "ln") {
             if (arg_1 <= 0)
-                throw std::overflow_error("Math error: Wrong function argument 'ln(a)', 'a' is less than or equal to Zorro\n");
+                throw std::overflow_error("Math error: Wrong function argument 'ln(a)', 'a' is less than or equal to Zero\n");
 
             return log(arg_1);
         }
@@ -472,7 +477,13 @@ namespace expr
             }
         }
         catch (std::overflow_error& e) {
-            std::cout << "Overflow error occurred\n" << e.what();
+            //std::cout << "Overflow error occurred\n" << e.what();
+            throw std::overflow_error("Overflow error occurred!");
+            /*QMessageBox* error_box = new QMessageBox;
+            error_box->setText("Overflow error occurred\n");
+            error_box->setIcon(QMessageBox::Critical);
+            error_box->setWindowTitle("Input Error");
+            error_box->exec();*/
         }
     }
 

@@ -1,0 +1,13 @@
+debug/main.o
+debug/mainwindow.o
+debug/BinaryTree.o
+debug/Expression.o
+debug/formula.o
+debug/model.o
+debug/Graph.o
+debug/modelform.o
+debug/savedmodel.o
+debug/feature.o
+debug/variable.o
+debug/moc_mainwindow.o
+debug/moc_modelform.o
