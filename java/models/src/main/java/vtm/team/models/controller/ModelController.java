@@ -1,6 +1,7 @@
 package vtm.team.models.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
 import vtm.team.models.dto.ModelDeleteDto;
 import vtm.team.models.dto.ModelRequestDto;
@@ -53,9 +54,17 @@ public class ModelController {
         Model savedModel = service.save(mapper.toModel(requestDto));
         return mapper.toResponseDto(savedModel);
     }
+
     @GetMapping
     public List<ModelResponseDto> getAll(@RequestParam Map<String, String> params) {
         return service.findAll(params).stream()
+                .map(mapper::toResponseDto).collect(Collectors.toList());
+    }
+    @GetMapping("/paged")
+    public List<ModelResponseDto> getAll(@RequestParam (defaultValue = "2") Integer count,
+                                         @RequestParam (defaultValue = "0") Integer page) {
+        PageRequest pageRequest = PageRequest.of(page, count);
+        return service.findAll(pageRequest).stream()
                 .map(mapper::toResponseDto).collect(Collectors.toList());
     }
     @DeleteMapping

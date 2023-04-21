@@ -2,6 +2,7 @@ package vtm.team.models.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import vtm.team.models.model.Model;
 
@@ -34,6 +35,14 @@ public class ModelServiceLogger implements ModelService {
             logger.log(builder.toString());
         }
         return service.findAll(params);
+    }
+
+    @Override
+    public List<Model> findAll(PageRequest pageRequest) {
+        logger.log("Received page request: " + pageRequest.toString());
+        List<Model> result = service.findAll(pageRequest);
+        logger.log("Returning list of size " + result.size());
+        return result;
     }
 
     @Override

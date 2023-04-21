@@ -1,6 +1,7 @@
 package vtm.team.models.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import vtm.team.models.model.Model;
@@ -44,5 +45,10 @@ public class ModelServiceImpl implements ModelService {
     @Override
     public void deleteById(long id) {
         repository.deleteById(id);
+    }
+
+    @Override
+    public List<Model> findAll(PageRequest pageRequest) {
+        return repository.findAll(pageRequest).toList();
     }
 }
